@@ -104,6 +104,27 @@
                     </select>
                 </div>
 
+                <div class="formRow">
+                    <label for="dish">What's your favorite dish?</label>
+                    <input name="favDish" id="dish" type="text" list="dishType" />
+                    <datalist id="dishType">
+                        <option value="Anitpasto Pizzina" />
+                        <option value="Big Kahuna Pizza" />
+                        <option value="BBQ Chicken Pizza" />
+                        <option value="Mediterranean Herb Pizza" />
+                        <option value="Pasta Rolls" />
+                        <option value="Pasto Artichoke Pizza" />
+                    </datalist>
+                </div>
+
+                <div class="formRow">
+                    <label for="dineSpin">How many times do you dine out per month?</label>
+                    <input type="number" name="dineSpin" id="dineSpin" value="1" step="1" min="0" max="20" />
+                </div>
+
+                <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                <label for="mailCB">Add me to you mailing list for great coupons and specials!</label>
+
             </fieldset>
 
             <!-- Survey 2 -->
@@ -156,27 +177,6 @@
                 </div>
 
                 <div class="formRow">
-                    <label for="dish">What's your favorite dish?</label>
-                    <input name="favDish" id="dish" type="text" list="dishType" />
-                    <datalist id="dishType">
-                        <option value="Anitpasto Pizzina" />
-                        <option value="Big Kahuna Pizza" />
-                        <option value="BBQ Chicken Pizza" />
-                        <option value="Mediterranean Herb Pizza" />
-                        <option value="Pasta Rolls" />
-                        <option value="Pasto Artichoke Pizza" />
-                    </datalist>
-                </div>
-
-                <div class="formRow">
-                    <label for="dineSpin">How many times do you dine out per month?</label>
-                    <input type="dineOut" id="dineSpin" type="number" value="1" step="1" min="1" max="1" />
-                </div>
-
-                <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
-                <label for="mailCB">Add me to you mailing list for great coupons and specials!</label>
-
-                <div class="formRow">
                     <label for="rangeBox">Rate the overall service<br />
                         (0=poor; 10=great)</label>
                     </label>
@@ -189,8 +189,12 @@
                 <textarea name="custExp" id="commBox"></textarea>
 
             </fieldset>
-        </form>
 
+            <div id="buttons">
+                <input type="submit" value="Submit My Survey">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
     </section>
     <footer>
         <h1>ORDER</h1>
